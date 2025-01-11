@@ -210,9 +210,11 @@ Node *findNode(Node *a, int key){
     do{
         if(a->data.key == key)
             return a;
-        Node *result = findNode(a->child, key);
-        if(result != NULL)
-            return result;
+        //else if(a->data.key < key){
+            Node *result = findNode(a->child, key);
+            if(result != NULL)
+                return result;
+        //}
 
         a = a->rs;
     }while(a != start);
