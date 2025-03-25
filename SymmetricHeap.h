@@ -9,7 +9,7 @@ double ended priority queue
 typedef struct symmetric_heap SymHeap;
 
 SymHeap *initSym(int size);
-void insertSym(SymHeap *heap, Element data);
+void insertSym(SymHeap *heap, Element data );
 Element getSymMax(SymHeap *heap);
 Element getSymMin(SymHeap *heap);
 
